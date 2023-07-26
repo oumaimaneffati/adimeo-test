@@ -1,0 +1,9 @@
+{% if events %}
+    <div class="block-result-items">
+        {% for event in events %}
+            {{ event.title }}
+            {{ event.event_type }}
+        {% endfor %}
+    </div>
+{% endif %}
+

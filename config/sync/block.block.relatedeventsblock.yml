@@ -1,0 +1,21 @@
+uuid: d054e3ee-9b6b-4530-998a-11086781a4b7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - event
+  theme:
+    - test_drupal
+id: relatedeventsblock
+theme: test_drupal
+region: content
+weight: 0
+provider: null
+plugin: related_events_list_block
+settings:
+  id: related_events_list_block
+  label: 'Related Events Block'
+  label_display: visible
+  provider: event
+  events_number: '3'
+visibility: {  }

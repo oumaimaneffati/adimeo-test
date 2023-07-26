@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_cron().
+ */
+function event_cron() {
+
+  $queue = Drupal::queue('event_unpublish');
+  $events = \Drupal::service('event.event_service')->getNodesToUnpublish();
+  Drupal::logger('cron')->notice('Cron will unpublish %number of events',['%number'=>count($events)]);
+
+  foreach ($events as $event) {
+    $queue->createItem($event);
+  }
+}

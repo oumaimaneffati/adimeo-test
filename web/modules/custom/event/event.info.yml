@@ -1,0 +1,5 @@
+name: Event
+description: Provides functionalities for event content type
+package: Custom
+type: module
+core_version_requirement: ^9.2 || ^10
