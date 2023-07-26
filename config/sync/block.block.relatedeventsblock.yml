@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - event
+    - node
   theme:
     - test_drupal
 id: relatedeventsblock
@@ -18,4 +19,11 @@ settings:
   label_display: visible
   provider: event
   events_number: '3'
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      event: event
