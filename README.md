@@ -14,7 +14,7 @@ To install the project :
 Import the database: (To get the events content)
 
 Inside the php container:
-- mysql -u user -p database-name<dump.sql
+- mysql -u user -p database-name<test-technique.sql
 
 Synchronize the configuration:
 
