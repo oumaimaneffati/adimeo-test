@@ -13,3 +13,14 @@ function event_cron() {
     $queue->createItem($event);
   }
 }
+/**
+ * Implements hook_theme().
+ */
+function event_theme() {
+  return array(
+    'block_related_events' => array(
+      'variables' => array('events' => NULL),
+    ),
+  );
+}
+
