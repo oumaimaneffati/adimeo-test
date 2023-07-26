@@ -22,7 +22,7 @@ Inside the php container:
 - cd web/
 - drush cim -y
 
-##Technical choices
+## Technical choices
 
 1/ A custom module event was created and activated to treat the test instructions
 
