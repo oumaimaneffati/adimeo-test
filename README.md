@@ -22,8 +22,17 @@ Inside the php container:
 - cd web/
 - drush cim -y
 
-************************ Technical choices ************************
+##Technical choices
 
-1/ The number of events to show in the block is configurable in the block section (by default : 3)
-2/ The block is configured to be displayed in the content type (event) : (block.block.relatedeventsblock.yml)
-3/ Queue UI module was installed to insure that the queue to unpublish events is working properly.
+1/ A custom module event was created and activated to treat the test instructions
+
+2/ The number of events to show in the block is configurable in the block section (by default : 3)
+
+3/ The block is configured to be displayed in the content type (event) : (block.block.relatedeventsblock.yml)
+
+4/ The file block-related-events.html.twig was created to handle the templating of the block, I choose to only show the title and the event type but other informations can be passed and displayed in the template
+
+4/ Queue UI module was installed to insure that the queue to unpublish events is working properly but it's manadatory to use it.
+
+## Time spent : 6 hours
+
